@@ -28,4 +28,16 @@ export class ContadorComponent {
     age: 34,
   }
 
+  counter:number = 0;
+
+  //make a function to increase the counter
+  increaseCounter():void {
+    this.counter++;
+  }
+
+  //make a function to decrease the counter
+  decreaseCounter():void {
+    this.counter--;
+  }
+
 }
