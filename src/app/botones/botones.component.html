@@ -1,0 +1,15 @@
+<p>botones works!</p>
+<div>
+  <button type="button" [class.disabled]="buttonsDisabled"
+          class="btn btn-danger mx-1" (click)="changeTextColor('text-danger')">Rojo</button>
+  <button type="button" [class.disabled]="buttonsDisabled"
+          class="btn btn-success mx-1" (click)="changeTextColor('text-success')">Success</button>
+  <button type="button" [class.disabled]="buttonsDisabled"
+          class="btn btn-info mx-1"(click)="changeTextColor('text-info')">Info</button>
+</div>
+
+<p class="{{classTextColor}}">Texto que va a cambiar de color con la clase</p>
+<p [class]="classTextColor">Texto que va a cambiar de color con la clase</p>
+{{classTextColor}}
+
+<button class="btn btn-info" (click)="changeButtonsDisabled()">Activar Desactivar</button>
