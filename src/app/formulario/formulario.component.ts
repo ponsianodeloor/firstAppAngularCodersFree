@@ -14,8 +14,15 @@ export class FormularioComponent {
 
   }
 
+  messageSent:boolean = false;
+
   showConsole(name:string) {
     console.log('hola ' + name);
+    this.messageSent = true;
+  }
+
+  closeAlert() {
+    this.messageSent = false;
   }
 
 }

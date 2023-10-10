@@ -4,3 +4,15 @@
 <button class="btn btn-primary mt-2" (click)="showConsole(name.value)">
   Mostrar en consola
 </button>
+
+
+<div class="alert alert-primary my-4" *ngIf="messageSent; else message">
+  Se ha enviado el mensaje
+  <button class="btn btn-danger" (click)="closeAlert()">X</button>
+</div>
+
+<ng-template #message>
+  <div class="text-info">
+    Ingrese su nombre para continuar
+  </div>
+</ng-template>
