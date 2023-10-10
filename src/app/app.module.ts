@@ -6,6 +6,7 @@ import { ContadorComponent } from './contador/contador/contador.component';
 import { BotonesComponent } from './botones/botones.component';
 import { ChangeImageComponent } from './change-image/change-image.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { BuclesComponent } from './bucles/bucles.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { FormularioComponent } from './formulario/formulario.component';
     ContadorComponent,
     BotonesComponent,
     ChangeImageComponent,
-    FormularioComponent
+    FormularioComponent,
+    BuclesComponent
   ],
   imports: [
     BrowserModule

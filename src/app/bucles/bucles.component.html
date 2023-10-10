@@ -1,0 +1,19 @@
+<p>bucles works!</p>
+<ul>
+  <li *ngFor="let person of persons; let i = index">
+    {{i + 1}} - {{ person.name }} is {{ person.age }} years old.
+  </li>
+</ul>
+
+
+<!-- make a loop that will display the persons in a table with ngFor -->
+<table class="table table-striped">
+  <tr>
+    <th>First Name</th>
+    <th>Age</th>
+  </tr>
+  <tr *ngFor="let person of persons">
+    <td>{{person.name}}</td>
+    <td>{{person.age}}</td>
+  </tr>
+</table>
