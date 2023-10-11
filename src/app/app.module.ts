@@ -7,6 +7,7 @@ import { BotonesComponent } from './botones/botones.component';
 import { ChangeImageComponent } from './change-image/change-image.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { BuclesComponent } from './bucles/bucles.component';
+import { SwitchComponent } from './switch/switch.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BuclesComponent } from './bucles/bucles.component';
     BotonesComponent,
     ChangeImageComponent,
     FormularioComponent,
-    BuclesComponent
+    BuclesComponent,
+    SwitchComponent
   ],
   imports: [
     BrowserModule

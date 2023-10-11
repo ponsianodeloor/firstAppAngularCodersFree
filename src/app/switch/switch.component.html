@@ -1,0 +1,19 @@
+<div>
+  <input type="text" class="form-control my-2" #numDia placeholder="ingrese el numero del dia">
+  <button class="btn btn-primary" (click)="getDayOfWeek(Number(numDia.value))"> Validar </button>
+  <br>
+  <button class="btn btn-primary" (click)="dayNumber=Number(numDia.value)"> Validar </button>
+  <p>{{getDayOfWeek(Number(numDia.value))}}</p>
+</div>
+
+
+<div [ngSwitch]="dayNumber">
+  <span *ngSwitchCase="1">Monday</span>
+  <span *ngSwitchCase="2">Tuesday</span>
+  <span *ngSwitchCase="3">Wednesday</span>
+  <span *ngSwitchCase="4">Thursday</span>
+  <span *ngSwitchCase="5">Friday</span>
+  <span *ngSwitchCase="6">Saturday</span>
+  <span *ngSwitchCase="7">Friday</span>
+  <span *ngSwitchDefault>Day not valid</span>
+</div>
