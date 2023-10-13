@@ -1,12 +1,15 @@
 <div class="card">
   <div class="card-body">
-    <form (ngSubmit)="onSubmit()">
+    <form (ngSubmit)="onSubmit()" #formContact="ngForm">
       <div>
         <label class="form-label">
           Name:
         </label>
         <input type="text" name="name" class="form-control my-2"
-               placeholder="por favor ingrese un nombre" [(ngModel)]="person.name">
+               placeholder="por favor ingrese un nombre" [(ngModel)]="person.name" #name="ngModel" required>
+        <div class="alert alert-danger mt-2" [hidden]="name.valid || name.pristine">
+          El nombre es obligatorio
+        </div>
       </div>
 
       <div>
@@ -14,13 +17,22 @@
           Edad:
         </label>
         <input type="number" name="age" class="form-control my-2"
-               placeholder="por favor ingrese la edad" [(ngModel)]="person.age">
+               placeholder="por favor ingrese la edad" [(ngModel)]="person.age" #age="ngModel" required>
+        <div class="alert alert-danger mt-2" [hidden]="age.valid || age.pristine">
+          La edad es obligatoria
+        </div>
 
       </div>
-      <button class="btn btn-primary my-2">Guardar</button>
+      <button class="btn btn-primary my-2" [disabled]="name.invalid || age.invalid || formContact.invalid">
+        Guardar
+      </button>
     </form>
 
     {{person | json}}
 
   </div>
 </div>
+
+{{name.errors | json}}
+{{age.errors | json}}
+{{formContact.valid | json}}

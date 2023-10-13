@@ -10,7 +10,7 @@ import {Person} from "../interfaces/person";
 export class FormTemplateComponent {
 
   person:Person = {
-    name: 'PonWick',
+    name: '',
     age: 34,
   }
 

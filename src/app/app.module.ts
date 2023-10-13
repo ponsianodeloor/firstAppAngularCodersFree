@@ -8,6 +8,8 @@ import { ChangeImageComponent } from './change-image/change-image.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { BuclesComponent } from './bucles/bucles.component';
 import { SwitchComponent } from './switch/switch.component';
+import { FormTemplateComponent } from './form-template/form-template.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -17,10 +19,12 @@ import { SwitchComponent } from './switch/switch.component';
     ChangeImageComponent,
     FormularioComponent,
     BuclesComponent,
-    SwitchComponent
+    SwitchComponent,
+    FormTemplateComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
