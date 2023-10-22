@@ -12,6 +12,7 @@ import { FormTemplateComponent } from './form-template/form-template.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { FormReactiveComponent } from './form-reactive/form-reactive.component';
 import { FormReactiveFormGroupComponent } from './form-reactive-form-group/form-reactive-form-group.component';
+import { FormReactiveFormBuilderComponent } from './form-reactive-form-builder/form-reactive-form-builder.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormReactiveFormGroupComponent } from './form-reactive-form-group/form-
     SwitchComponent,
     FormTemplateComponent,
     FormReactiveComponent,
-    FormReactiveFormGroupComponent
+    FormReactiveFormGroupComponent,
+    FormReactiveFormBuilderComponent
   ],
   imports: [
     BrowserModule,
