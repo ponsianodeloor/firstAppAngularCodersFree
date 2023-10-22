@@ -13,6 +13,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { FormReactiveComponent } from './form-reactive/form-reactive.component';
 import { FormReactiveFormGroupComponent } from './form-reactive-form-group/form-reactive-form-group.component';
 import { FormReactiveFormBuilderComponent } from './form-reactive-form-builder/form-reactive-form-builder.component';
+import { ChildrenInputComponent } from './children-input/children-input.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FormReactiveFormBuilderComponent } from './form-reactive-form-builder/f
     FormTemplateComponent,
     FormReactiveComponent,
     FormReactiveFormGroupComponent,
-    FormReactiveFormBuilderComponent
+    FormReactiveFormBuilderComponent,
+    ChildrenInputComponent
   ],
   imports: [
     BrowserModule,
