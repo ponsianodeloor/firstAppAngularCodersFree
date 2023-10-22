@@ -30,7 +30,7 @@ import { FatherOutputComponent } from './father-output/father-output.component';
     FormReactiveFormGroupComponent,
     FormReactiveFormBuilderComponent,
     ChildrenInputComponent,
-    FatherOutputComponent
+    FatherOutputComponent,
   ],
   imports: [
     BrowserModule,
