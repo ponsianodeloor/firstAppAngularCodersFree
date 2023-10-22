@@ -1,0 +1,6 @@
+<p>father-output works!</p>
+
+<input type="text" class="form-control" [(ngModel)]="title">
+<!-- <app-children-input [title]="title" (titleChange)="title = 'Prueba'" ></app-children-input> -->
+<!-- <app-children-input [title]="title" (titleChange)="title = $event" ></app-children-input> -->
+<app-children-input [(title)]="title"></app-children-input>

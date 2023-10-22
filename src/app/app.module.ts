@@ -14,6 +14,7 @@ import { FormReactiveComponent } from './form-reactive/form-reactive.component';
 import { FormReactiveFormGroupComponent } from './form-reactive-form-group/form-reactive-form-group.component';
 import { FormReactiveFormBuilderComponent } from './form-reactive-form-builder/form-reactive-form-builder.component';
 import { ChildrenInputComponent } from './children-input/children-input.component';
+import { FatherOutputComponent } from './father-output/father-output.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ChildrenInputComponent } from './children-input/children-input.componen
     FormReactiveComponent,
     FormReactiveFormGroupComponent,
     FormReactiveFormBuilderComponent,
-    ChildrenInputComponent
+    ChildrenInputComponent,
+    FatherOutputComponent
   ],
   imports: [
     BrowserModule,
