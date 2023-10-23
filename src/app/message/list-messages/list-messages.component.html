@@ -1,0 +1,10 @@
+<p>list-messages works!</p>
+
+create a table with a list of messages
+<ul>
+    <li *ngFor="let message of messagesService.messages"> {{message}}</li>
+</ul>
+
+{{messagesService.messages | json}}
+
+

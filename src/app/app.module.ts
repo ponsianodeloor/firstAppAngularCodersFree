@@ -15,6 +15,8 @@ import { FormReactiveFormGroupComponent } from './form-reactive-form-group/form-
 import { FormReactiveFormBuilderComponent } from './form-reactive-form-builder/form-reactive-form-builder.component';
 import { ChildrenInputComponent } from './children-input/children-input.component';
 import { FatherOutputComponent } from './father-output/father-output.component';
+import { CreateMessageComponent } from './message/create-message/create-message.component';
+import { ListMessagesComponent } from './message/list-messages/list-messages.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { FatherOutputComponent } from './father-output/father-output.component';
     FormReactiveFormBuilderComponent,
     ChildrenInputComponent,
     FatherOutputComponent,
+    CreateMessageComponent,
+    ListMessagesComponent,
   ],
   imports: [
     BrowserModule,
